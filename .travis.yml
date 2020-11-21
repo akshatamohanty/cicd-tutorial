@@ -8,9 +8,12 @@ script:
 branches:
   only:
   - develop
+  - master
 deploy:
   provider: heroku
   api_key:
     secure: ebvMqzPMrJJpvdlY/3IkIaIoRSLoOnIFLZdx3lCFmlPtbQJ9NatIF53KAnYR0/EMVP3TJti+VlxDnS4S60ujHclWiplmYPyYBStM4OBvrYH1LOvqrME/CG1dgTVKobq5MF6oBYOqGXo2WnJQVZ22DoQMEfcj+iT2A8bqoZt3IdJ6daISQ32TQX9qI3CJuhcdweCZ1jjR6PEdsAasKbzYcXoRr125ac6WmcR4ZMRiiIs0CsceDIjNsCo+0/GUNXO4YuD6Xtxu0RYK8XNRgwg+UOMZlUgMJybyQMq/zaaYPZjuRUPi7/jmxZL3+6Jwlb8xEHOPFWl6rsD2ZoH+u+tvwjeEV76Bls3IGOIv8mAO8oQORTP6scMQZQSayxy5ASi8grY/BKizI5Bh07NYh76iK973xRQJ8auV0Yq+cO5sqzgJYuUfUgFedueSesFz3wtFaqvI1SamkQkWMX/b6CM0xOftaZxz6sr5siuDRegGZhEuymcWoOaBZkGlvNWkA7l16vwAGYtw3tyBKLa5kwYVx6EjAkHaLLcKoe5JQs8iGy4ThMOci02hujxR0YOm/Wp5nDqFXJGUzfmcLB0OAv6vqBQNMcVP3p4varezUph6eI/WWI2zPRfdfz5YRqZtUtkERp5/nvU+kRa64JSZNMWSQFB5Tv0ZZoHdkE4//U0b3sk=
   app:
     develop: techladies-cicd-2020-staging
+    master: techladies-cicd-2020-prod
+    
